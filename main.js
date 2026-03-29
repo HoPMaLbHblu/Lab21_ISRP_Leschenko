@@ -39,3 +39,13 @@ stopBtn.onclick = function () {
     timer = null;
 };
 
+resetBtn.onclick = function () {
+    clearInterval(timer);
+    timer = null;
+
+    seconds = 0;
+    minutes = 0;
+    hours = 0;
+
+    time.textContent = "00:00:00";
+};
